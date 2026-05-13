@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+  import { useState, useEffect, useRef } from "react";
 
 const DAYS = ['sunday','monday','tuesday','wednesday','thursday','friday','saturday'];
 const DAY_COL = ['M','T','W','T','F','S','S'];
@@ -35,8 +35,7 @@ const getWeekDays = () => {
 };
 const WEEKDAYS = getWeekDays();
 
-// ── TASK EMOJI 
-─────────────────────────────────────────────
+// ── TASK EMOJI
 const getEmoji = (name='',cat='') => {
   const t=`${name} ${cat}`.toLowerCase();
   if(/bus|trip|travel|tour|excursion|picnic/.test(t)) return '🚌';
@@ -215,9 +214,9 @@ Only include days/fields that are changing. Omit specialEvent if not needed.`,
     }
   };
 
-  // ────────────────────────────────────────────────────────
+  // 
   //  TODAY VIEW  (Image 2 style — time + todo checklist)
-  // ────────────────────────────────────────────────────────
+  // 
   const TodayView = ()=>{
     const sections = SECTIONS.map(sec=>{
       const tasks = sec.id==='anytime'
@@ -318,10 +317,7 @@ Only include days/fields that are changing. Omit specialEvent if not needed.`,
       </div>
     );
   };
-
-  // ────────────────────────────────────────────────────────
-  //  WEEKLY VIEW  (Image 1 style — table with M T W T F S S)
-  // ────────────────────────────────────────────────────────
+  //  WEEKLY VIEW  (Image 1 style — table with M T W T F S S
   const WeeklyView = ()=>{
     const sections = SECTIONS.map(sec=>{
       const tasks = allWeekTasks.filter(t=>{
@@ -373,3 +369,4 @@ Only include days/fields that are changing. Omit specialEvent if not needed.`,
                           color:WEEKDAYS[i]?.isToday?'#E76F51':sec.textColor,
                           borderBottom:`2px solid ${sec.textColor}22`
                         }}>{d}</th>
+ 
